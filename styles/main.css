@@ -26,6 +26,12 @@ form {
 		margin-bottom: .5em;
 		border-radius: 5px;
 	}
+	& input:required:invalid {
+		border: 2px solid red;
+	}
+	& input:valid {
+		border: 1px solid black;
+	}
 	& fieldset {
 		padding: .5em 1em .75em;
 		margin-bottom: 1em;
@@ -38,6 +44,25 @@ form {
 	}
 }
 
+#exp_month, #exp_year {
+	width: 49%;
+}
+
+button {
+	font-weight: bold;
+	width: 10em;
+	background-color: var(--accent-color);
+	color: white;
+	border-radius: 6px;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+button:hover {
+	background-color: var(--gradient-color);
+	color: black;
+	cursor: pointer;
+}
 
 /* default styles */
 body {
